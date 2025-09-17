@@ -1,7 +1,11 @@
 <?php
 
-$nom=($_POST["nom"]);
-$prenom=($_POST["prenom"]);
+$login=($_POST["login"]);
+$mdp=($_POST["mdp"]);
+if ($login=="exit" and $mdp=="azerty")
+{
+    header(profil.html);
+}
 
-echo "Bonjour $prenom $nom";
+echo "Bonjour $login votre mot de passe est : $mdp";
 ?>
